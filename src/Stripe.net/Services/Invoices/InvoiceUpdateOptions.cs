@@ -32,6 +32,12 @@ namespace Stripe
         [JsonProperty("days_until_due")]
         public long? DaysUntilDue { get; set; }
 
+        /// <summary>
+        /// ID of the default payment method for the invoice.
+        /// </summary>
+        [JsonProperty("custom_fields")]
+        public string DefaultPaymentMethodId { get; set; }
+
         [JsonProperty("default_source")]
         public string DefaultSource { get; set; }
 

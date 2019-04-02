@@ -12,6 +12,12 @@ namespace Stripe
         public List<InvoiceCustomFieldOptions> CustomFields { get; set; }
 
         /// <summary>
+        /// ID of the default payment method for the customer.
+        /// </summary>
+        [JsonProperty("custom_fields")]
+        public string DefaultPaymentMethodId { get; set; }
+
+        /// <summary>
         /// Default footer to be displayed on invoices for this customer.
         /// </summary>
         [JsonProperty("footer")]
